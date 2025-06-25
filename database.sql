@@ -1,30 +1,3 @@
-# Biodiesel
-
-## 📁 Project Structure
-
-/finance-app/
-├── config/
-│ └── db.php # MySQLi connection
-├── includes/
-│ ├── header.php # Session starter (optional)
-│ ├── footer.php # Footer (optional)
-│ └── auth.php # Authentication check
-├── register.php # User registration
-├── login.php # User login
-├── logout.php # Logout
-├── profile.php # View user profile
-├── preferences.php # Change currency/timezone
-├── security.php # Change password
-├── transactions.php # Show transactions
-├── loans.php # Show loan list
-├── loan_summary.php # Show loan summary totals
-└── index.php # Dashboard or homepage
-
-✅ 2. 🗃️ SQL File for Installation
-
-Create a file named database.sql in your repo with the following content:
-
-```sql
 CREATE DATABASE Biodiesel;
 USE Biodiesel;
 
@@ -61,5 +34,4 @@ CREATE TABLE loans (
     interest_rate DECIMAL(5,2),
     installment DECIMAL(10,2),
     FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
-);
-```
+); 
